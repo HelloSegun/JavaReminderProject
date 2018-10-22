@@ -5,7 +5,7 @@ public class Employee {
 	private double salary;
 	
 	public Employee(String empName) {
-		name = empName;
+		this.name = empName;
 	}
 	
 	public void setSalary(double empSal) {
@@ -16,10 +16,11 @@ public class Employee {
 		System.out.println("name : " + name);
 		System.out.println("salary : " + salary);
 	}
-	
+	/*
 	public static void main(String args[]) {
 		Employee empOne = new Employee("TomTom");
 		empOne.setSalary(1000);
 		empOne.printEmp();
 	}
+	*/
 }

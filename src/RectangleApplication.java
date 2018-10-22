@@ -8,8 +8,7 @@ public class RectangleApplication {
 		// Calculate the area of the Rectangle
 		RectangleApplication rec = new RectangleApplication();
 		rec.values(10.56, 5.35);
-		System.out.println("Area of the Rectangle" + "\n" + "Length of Rectangle: " + rec.length + "\n" + "Width of Rectangle: " + rec.width);
-		System.out.println(rec.GetArea());
+		rec.Display();
 	}
 	
 	public void values(double len, double wid) {
@@ -19,6 +18,12 @@ public class RectangleApplication {
 	
 	public double GetArea() {
 		return length * width;
+	}
+	
+	public void Display() {
+		System.out.println("Length of Rectangle: " + length);
+		System.out.println("Width of Rectangle: " + width);
+		System.out.println("Area of the Rectangle: " + GetArea());
 	}
 
 }
